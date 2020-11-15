@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./system.css">
+    <title>Todo app</title>
+</head>
+<body>
+    <div class="container">
+        <form id="hlavni-form">
+            <input type="text" id="add-item" placeholder="Add Items" value="">
+            <input type="submit" id="submit-btn" value="+">
+            <div class="flexRow">
+                <div id="complete">Complete All Tasks</div>
+                <div id="clear">Clear Completed</div>
+            </div>          
+            <hr>
+            <div id="vypis-itemu">
+                Zde bude výpis itemů
+            </div>
+            <hr>
+            <div class="flexRow">
+                <div id="tasks"><span id="count-of-tasks"></span> tasks on list</div>
+                <div id="filters">
+                    <div id="all">All</div>
+                    <div id="completed">Completed</div>
+                    <div id="inprogress">In-progress</div>
+                    <div id="notstarted">Not started</div>
+                </div>
+            </div>
+        </form>
+    </div>
+   
+    <script src="./server.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  box-shadow: -1px 0px 16px 0px;
+  width: 80vw;
+  height: 50vh;
+  border-radius: 15px;
+  position: relative;
+}
+#add-item {
+  width: 100%;
+  margin: 20px 20px 5px 20px;
+  max-width: 95%;
+  display: block;
+  padding: 10px 0px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  background-color: #e4e2e2;
+}
+#add-item::placeholder {
+  padding-left: 10px;
+  color: grey;
+}
+#submit-btn {
+  padding: 5px 9px;
+  background: none;
+  border: 1px solid grey;
+  border-radius: 50%;
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 26px;
+  margin-right: 18px;
+}
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+  max-width: 95%;
+  margin: auto;
+  color: grey;
+  font-size: 12px;
+}
+#filters {
+  display: flex;
+}
+#filters div {
+  margin: 0px 4px;
+}
+#filters div:last-child {
+  margin: 0px 0px 0px 4px;
+}
+.singleItem {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0px;
+}
+.task-status-circle {
+  background: red;
+  border-radius: 50%;
+  height: 0px;
+  width: 10px;
+  padding: 2px 10px;
+  margin: 0px 3px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.Not-started {
+  color: red;
+}
+.In-progress {
+  color: blue;
+}
+.Completed {
+  color: green;
+}
+.task-status:first-child > .Not-started {
+  background: red;
+}
+.task-status:first-child > .In-progress {
+  background: blue;
+}
+.task-status:first-child > .Completed {
+  background: green;
+}
